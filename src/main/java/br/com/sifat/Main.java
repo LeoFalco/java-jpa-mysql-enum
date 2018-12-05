@@ -1,20 +1,18 @@
 package br.com.sifat;
 
 import br.com.sifat.model.Pessoa;
-import br.com.sifat.model.TipoPessoa;
-import br.com.sifat.processor.CustomEnumeratedProcessor;
+import br.com.sifat.model.enumeracao.TipoPessoa;
 
 import javax.persistence.EntityManager;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("teste");
 
-        CustomEnumeratedProcessor.process();
-
-
+        //CustomEnumeratedProcessor.process();
 
         EntityManager em = EntityManagerHelper.getEntityManager();
+
 
         Pessoa p = new Pessoa();
         p.setApelido("leonardo");
@@ -24,5 +22,9 @@ public class Main {
         em.getTransaction().begin();
         em.persist(p);
         em.getTransaction().commit();
+
+        em.getEntityManagerFactory().close();
+        em.close();
+        System.exit(0);
     }
 }
