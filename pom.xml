@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 
         <mysql-connector.version>8.0.16</mysql-connector.version>
     </properties>
