@@ -39,7 +39,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
-            <version>3.6.3.Final</version>
+            <version>5.2.18.Final</version>
         </dependency>
 
 
